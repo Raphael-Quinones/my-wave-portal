@@ -32,7 +32,7 @@ contract WavePortal {
 
         //Make sure it's 15 minutes 
         require(
-            lastWavedAt[msg.sender] + 15 minutes < block.timestamp,
+            lastWavedAt[msg.sender] + 5 seconds < block.timestamp,
             "Wait 15m"
         );
 
